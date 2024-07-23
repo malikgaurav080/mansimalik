@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image_movement</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #container {
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+      #movableImage {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        id="movableImage"
+        src="https://images.pexels.com/photos/25691240/pexels-photo-25691240/free-photo-of-a-black-and-white-checkered-pattern-on-a-gray-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const image = document.getElementById("movableImage");
+        let position = { top: 0, left: 0 };
+        const step = 10; // Number of pixels the image moves per arrow key press
+
+        // Function to update the image position
+        function updatePosition() {
+          image.style.top = `${position.top}px`;
+          image.style.left = `${position.left}px`;
+        }
+
+        document.addEventListener("keydown", (event) => {
+          switch (event.key) {
+            case "ArrowUp":
+              if (position.top > 0) position.top -= step;
+              break;
+            case "ArrowLeft":
+              if (position.left > 0) position.left -= step;
+              break;
+
+            case "ArrowRight":
+              if (position.left < container.clientWidth - image.clientWidth)
+                position.left += step;
+              break;
+
+            case "ArrowDown":
+              if (position.top < container.clientHeight - image.clientHeight)
+                position.top += step;
+              break;
+          }
+          updatePosition();
+        });
+        updatePosition();
+      });
+    </script>
+  </body>
+</html>

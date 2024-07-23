@@ -1,0 +1,33 @@
+/* descendent selector */
+main p {
+    color: chartreuse;
+}
+/* child selector */
+h1>p {
+    color: blue;
+}
+/* adjacent sibling selector */
+/* section + p {
+    color: blueviolet;
+} */
+
+
+/* gernal sibling selectors */
+section ~ p {
+    color: blueviolet;
+}
+
+/* attribute selector */
+[target="blank"]{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+[alt~="PW"]{
+    color: aqua;
+    background-color:black;
+}
+
+[alt="pw2"]{
+    background-color: aquamarine;
+}

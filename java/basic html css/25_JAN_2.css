@@ -1,0 +1,28 @@
+/* universal selector */
+* {
+margin: 0;
+padding: 0;
+} 
+/* element selector*/
+/* h1{
+    color: aqua;
+}
+p{
+    color: blueviolet;
+} */
+/* class selector */
+.para{
+    color: blue;
+}
+.hello{
+   font-size: 50px;
+}
+/* ID selector */
+#id1 {
+    color: antiquewhite;
+    background-color: lawngreen;
+}
+/* selector list */
+.class1 , .class2 , .class3{
+    /*we can select multiple selector in this selector and can give same style to different class*/
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom3</title>
+  </head>
+  <body>
+    <h1>pw skills</h1>
+    <p id="ids">welcome</p>
+    <button onclick="hey()" id="pink">submit</button>
+
+    <!-- event listener -->
+    <script>
+      document.addEventListener("click", hello);
+      function hello() {
+        document.getElementById("ids").innerText = "welcome to pw skills";
+      }
+      document.addEventListener("dblclick", hello);
+      function hello() {
+        document.getElementById("ids").innerText = "welcome to pw skills";
+      }
+      document.addEventListener("mouseenter", hello);
+      function hello() {
+        document.getElementById("ids").innerText = "welcome to pw skills";
+      }
+      function hey() {
+        document.getElementById("pink").innerText = "login";
+        document.getElementById("pink").style.color = "white";
+        document.getElementById("pink").style.backgroundColor = "purple";
+        document.getElementById("pink").style.padding = "20px";
+        document.getElementById("pink").style.border = "2px solid black";
+      }
+    </script>
+  </body>
+</html>

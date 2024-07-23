@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom1</title>
+  </head>
+  <body>
+    <!-- <script src="./dom1.js/"></script> -->
+    <p id="one">namaste!! <span>india</span></p>
+    <ul>
+      <li class="tech">one</li>
+      <li class="tech">two</li>
+      <li class="tech">three</li>
+    </ul>
+
+    <h1>red</h1>
+    <h1>green</h1>
+    <h1>blue</h1>
+
+    <h2>name</h2>
+    <h2 class="cls">subject</h2>
+    <h2 id="ids">rollno</h2>
+    <script>
+      // ID
+      let var1 = document.getElementById("one");
+      console.log(var1.innerHTML); //it will also prnt the html inside the main element
+      console.log(var1.innerText); //it will only print the text inside the main element
+      //   class
+      let var2 = document.getElementsByClassName("tech");
+      console.log(var2[2].innerText);
+      var2[1].innerText = "nodejs";
+      console.log(var2);
+      //   tagname
+      let var3 = document.getElementsByTagName("h1");
+      console.log(var3);
+      var3[2].style.color = "red";
+      //   query selector
+      let var4 = document.querySelector("#ids");
+      console.log(var4);
+      //   var4.className = "nxzz";
+      //   var4.classList = "this that their";
+      var4.setAttribute("title", "mansi");
+    </script>
+  </body>
+</html>

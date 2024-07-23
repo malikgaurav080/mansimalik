@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>album</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        gap: 10px;
+      }
+      .box1 {
+        background-color: red;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 70px 70px;
+        gap: 5px;
+        /* align-items: end; */
+      }
+      .ab {
+      }
+      .boxa {
+        background-color: #451010;
+        display: grid;
+        margin: 5px;
+      }
+      .boxb {
+        background-color: #8f1717;
+        margin: 5px;
+      }
+      .boxc {
+        background-color: #850a0a;
+        margin: 5px;
+      }
+      .box2 {
+        background-color: yellow;
+      }
+      .box3 {
+        background-color: blue;
+      }
+      .box4 {
+        background-color: green;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .box5 {
+        background-color: yellowgreen;
+      }
+      .box6 {
+        background-color: magenta;
+      }
+      .box7 {
+        background-color: rebeccapurple;
+      }
+      .box8 {
+        background-color: aqua;
+      }
+      .box9 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-ab box1">
+        <div class="ab boxa"></div>
+        <div class="ab boxb"></div>
+        <div class="ab boxc"></div>
+      </div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+      <div class="box box8"></div>
+      <div class="box box9"></div>
+    </div>
+  </body>
+</html>

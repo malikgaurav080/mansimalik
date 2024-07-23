@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend><h2>user details</h2></legend>
+            <label for="name">enter your name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="username" id="name" placeholder="yourName">
+            <br>
+
+            <label for="email">enter email address :&nbsp;</label>
+            <input type="email" name="emailid" id="email" value="jhon" readonly autofocus>
+            <br>
+
+            <label for="address">enter your address :&nbsp;&nbsp;</label>
+            <input type="text" name="address" id="address">
+            <br>
+
+            <label for="DOB">enter your dob :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" name="dob" id="DOB"><br>
+            <br>
+
+            <h3>choose your gender :</h3> : <br>
+            <label for="male">male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <label for="female">female&nbsp;&nbsp;</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="none">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" name="gender" id="none" value="none">
+            <br>
+
+            <h3>choose your number :</h3>
+            <label for="one">one&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" name="number" id="one">
+            <br>
+            <label for="two">two&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" name="number" id="two">
+            <br>
+            <label for="three">three&nbsp;&nbsp;</label>
+            <input type="checkbox" name="number" id="three">
+            <br>
+            <label for="four">four&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" name="number" id="four">
+            <br>
+
+            <label for="password">enter your password :</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <h3>enter a number</h3>
+            <input type="number" min="0" max="5"></label>
+
+            <input type="submit">
+
+        </fieldset>
+    </form>
+    <h1 id="text"></h1>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+        .box1 {
+            background-color: red;
+            border: 1px solid black;
+        }
+        .box2 {
+            background-color: yellow;
+            border: 1px solid black;
+            /* position: fixed;
+             bottom: 0;
+             right: 10px;
+             border-radius: 50px; */
+        }
+        .box3 {
+            background-color: #008000;
+            border: 1px solid black;
+            /* position: sticky;
+            top: 0; */
+        }
+        .box4 {
+            background-color: orange;
+            border: 1px solid black;
+            position: relative;   
+            top: 20px;
+            left: 25px;
+            top: 50px;
+           
+        }
+        /* in relative position element changes its position from its original place, but in absolute position element changes its position from parent element */
+    </style>
+     
+</head>
+<body>
+    <!-- top, bottom, right, left -->
+    <!-- types of position are static,sticky,fixed,relative, bsolute -->
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

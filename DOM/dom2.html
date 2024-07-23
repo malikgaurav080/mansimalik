@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom2</title>
+  </head>
+  <body>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <script>
+      // append child
+      let title = document.createElement("h1");
+      title.className = "mansi";
+      title.style.fontSize = "50px";
+      title.textContent = "micky mouse";
+      console.log(title);
+      document.body.append(title);
+      //   remove child
+      let ul = document.querySelector("ul");
+      console.log(ul);
+      let lis = document.querySelectorAll("li");
+      console.log(lis);
+      for (list of lis) {
+        ul.removeChild(list);
+      }
+    </script>
+  </body>
+</html>

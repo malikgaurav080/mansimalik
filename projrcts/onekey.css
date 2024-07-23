@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#display {
+  font-size: 50px;
+  font-weight: 600;
+  color: #7125b8;
+}
+div {
+  display: flex;
+  flex-direction: column;
+}

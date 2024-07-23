@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media_query</title>
+    <style>
+      div {
+        text-align: center;
+      }
+      @media screen and (max-width: 425px) {
+        div {
+          height: 200px;
+          width: 200px;
+          background-color: red;
+          margin: auto;
+          border-radius: 20px;
+        }
+        .box1 {
+          display: contents;
+          font-size: large;
+        }
+        .box2 {
+          display: none;
+        }
+        .box3 {
+          display: none;
+        }
+        .box4 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 425px) and (max-width: 768px) {
+        div {
+          height: 150px;
+          width: 400px;
+          background-color: #00eaff;
+          margin: auto;
+          border-radius: 20px;
+        }
+        .box2 {
+          display: contents;
+          font-size: large;
+        }
+        .box1 {
+          display: none;
+        }
+        .box3 {
+          display: none;
+        }
+        .box4 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        div {
+          height: 250px;
+          width: 500px;
+          margin: auto;
+          background-color: #bd9806;
+          margin: auto;
+          border-radius: 20px;
+        }
+        .box3 {
+          display: contents;
+          font-size: large;
+        }
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: none;
+        }
+        .box4 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        div {
+          height: 300px;
+          width: 600px;
+          margin: auto;
+          background-color: #276b03;
+          border-radius: 20px;
+        }
+        .box4 {
+          display: contents;
+          font-size: large;
+        }
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: none;
+        }
+        .box3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        div {
+          height: 300px;
+          width: 600px;
+          margin: auto;
+          background-color: #00ffdd;
+          border-radius: 20px;
+        }
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: none;
+        }
+        .box3 {
+          display: none;
+        }
+        .box4 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>this is media query demo page.</h1>
+      <div class="box box1">screen size: 425px</div>
+      <div class="box box2">screen size: 768px</div>
+      <div class="box box3">screen size: 1024px</div>
+      <div class="box box4">screen size: 1440px</div>
+      <div class="box box5"></div>
+    </div>
+  </body>
+</html>

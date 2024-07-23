@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlight Words</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="paragraph">
+      This is a sample paragraph with some words longer than eight characters.
+      As your newly-elected Supreme Leader, I’m delighted to put to bed those
+      wicked rumours from my traiterous, lying opponents. I was always innocent,
+      as 99.99% of you, the people, have demonstrated in a free and fair
+      election. My first act in government is to delete Fridays. Everyone will
+      appreciate working a shorter week – nobody bothered on Fridays, anyway –
+      and six-day weeks mean each birthday will come around every 312 days
+      rather than 365. More birthdays will generate more celebration activity,
+      and boost the economy. Best of all, we’ll all live 11% more years. All
+      except those who disagree, who won’t.
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var paragraph = document.getElementById("paragraph");
+        var words = paragraph.textContent.split(" ");
+
+        words.forEach(function (word) {
+          if (word.length > 8) {
+            paragraph.innerHTML = paragraph.innerHTML.replace(
+              word,
+              '<span class="highlight">' + word + "</span>"
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password confirmation</title>
+    <style>
+      body {
+        margin: 20px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="main">
+      <fieldset>
+        <legend><i>password confirmation</i></legend>
+        <label for="password">enter password : </label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="password" id="password" />
+        <br />
+        <label for="password">confirm password :</label>
+        <input
+          type="text"
+          placeholder="confirm password"
+          id="confirm_password"
+        />
+        <br />
+        <button id="btn">submit</button>
+      </fieldset>
+    </form>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("click", check);
+      function check() {
+        let password = document.getElementById("password").value;
+        let confirm_password =
+          document.getElementById("confirm_password").value;
+        console.log(password, confirm_password);
+        if (password == "") {
+          alert("please enter any password");
+        } else if (password != confirm_password) {
+          alert("password didn't match");
+          return false;
+        } else {
+          alert("password match");
+        }
+      }
+    </script>
+  </body>
+</html>

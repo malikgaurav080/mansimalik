@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password_validator</title>
+    <style>
+      body {
+        background-color: #fce4ec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form {
+        width: 450px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+      }
+      label {
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label
+        >username :
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" />
+      </label>
+      <br />
+      <label for="password"
+        >enter password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+          id="password"
+          type="password"
+        />
+      </label>
+      <br />
+      <label for="password"
+        >confirm_password : &nbsp;&nbsp;&nbsp;<input
+          id="confirm_password"
+          type="password"
+        />
+      </label>
+      <br />
+      <button id="btn">submit</button>
+    </form>
+
+    <script>
+      document.getElementById("btn").onclick = function () {
+        var password = document.getElementById("password").value,
+          confirm_password = document.getElementById("confirm_password").value;
+        if (password == "") {
+          alert("feild cannot be empty");
+        } else if (password != confirm_password) {
+          alert("password didn't match try again");
+          return false;
+        } else {
+          alert("password match");
+        }
+      };
+    </script>
+  </body>
+</html>
